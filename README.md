@@ -1,3 +1,3 @@
-## Mastering Embedded Systems Diploma
+# Mastering Embedded Systems Diploma
 
-# This repo for Diploma's Assignments
+## This repo for Diploma's Assignments
