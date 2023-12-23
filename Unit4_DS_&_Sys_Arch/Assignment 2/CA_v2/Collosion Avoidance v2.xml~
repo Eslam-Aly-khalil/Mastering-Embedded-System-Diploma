@@ -1,0 +1,1476 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<TURTLEGMODELING version="0.99">
+
+<Modeling type="AVATAR Design" nameTab="Design" >
+<AVATARBlockDiagramPanel name="Block Diagram" minX="10" maxX="2500" minY="10" maxY="1500" >
+<MainCode value="void __user_init() {"/>
+<MainCode value="}"/>
+<Optimized value="true" />
+<Validated value="CA;Collision_Avoidance;DC_Motor;US_Sensor;" />
+<Ignored value="" />
+
+<CONNECTOR type="5002" id="578" >
+<cdparam x="871" y="300" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<infoparam name="connector" value="" />
+<TGConnectingPoint num="0" id="579" />
+<P1  x="871" y="300" id="562" />
+<P2  x="739" y="310" id="14" />
+<AutomaticDrawing  data="true" />
+<extraparam>
+<iso value="in DC_motor_set(int speed)" />
+<osd value="out DC_motor_set(int speed)" />
+<FIFOType asynchronous="false" size="1" blocking="false" private="true" broadcast="false" lossy="false" />
+</extraparam>
+</CONNECTOR>
+<CONNECTOR type="5002" id="576" >
+<cdparam x="288" y="281" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<infoparam name="connector" value="" />
+<TGConnectingPoint num="0" id="577" />
+<P1  x="288" y="281" id="536" />
+<P2  x="422" y="310" id="13" />
+<AutomaticDrawing  data="true" />
+<extraparam>
+<isd value="in US_set_speed(int speed)" />
+<oso value="out US_set_speed(int distance)" />
+<FIFOType asynchronous="false" size="1" blocking="false" private="true" broadcast="false" lossy="false" />
+</extraparam>
+</CONNECTOR>
+<COMPONENT type="5000" id="25" >
+<cdparam x="422" y="109" />
+<sizeparam width="317" height="269" minWidth="5" minHeight="2" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="Block0" value="CA" />
+<TGConnectingPoint num="0" id="1" />
+<TGConnectingPoint num="1" id="2" />
+<TGConnectingPoint num="2" id="3" />
+<TGConnectingPoint num="3" id="4" />
+<TGConnectingPoint num="4" id="5" />
+<TGConnectingPoint num="5" id="6" />
+<TGConnectingPoint num="6" id="7" />
+<TGConnectingPoint num="7" id="8" />
+<TGConnectingPoint num="8" id="9" />
+<TGConnectingPoint num="9" id="10" />
+<TGConnectingPoint num="10" id="11" />
+<TGConnectingPoint num="11" id="12" />
+<TGConnectingPoint num="12" id="13" />
+<TGConnectingPoint num="13" id="14" />
+<TGConnectingPoint num="14" id="15" />
+<TGConnectingPoint num="15" id="16" />
+<TGConnectingPoint num="16" id="17" />
+<TGConnectingPoint num="17" id="18" />
+<TGConnectingPoint num="18" id="19" />
+<TGConnectingPoint num="19" id="20" />
+<TGConnectingPoint num="20" id="21" />
+<TGConnectingPoint num="21" id="22" />
+<TGConnectingPoint num="22" id="23" />
+<TGConnectingPoint num="23" id="24" />
+<extraparam>
+<CryptoBlock value="false" />
+<Attribute access="0" id="speed" value="0" type="8" typeOther="" />
+<Attribute access="0" id="distance" value="0" type="8" typeOther="" />
+<Attribute access="0" id="threeshold" value="0" type="8" typeOther="" />
+<Signal value="in US_set_speed(int speed)" attached="true" />
+<Signal value="out DC_motor_set(int speed)" attached="true" />
+</extraparam>
+</COMPONENT>
+
+<COMPONENT type="5000" id="495" >
+<cdparam x="15" y="10" />
+<sizeparam width="1094" height="485" minWidth="5" minHeight="2" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="Block0" value="Collision_Avoidance" />
+<TGConnectingPoint num="0" id="496" />
+<TGConnectingPoint num="1" id="497" />
+<TGConnectingPoint num="2" id="498" />
+<TGConnectingPoint num="3" id="499" />
+<TGConnectingPoint num="4" id="500" />
+<TGConnectingPoint num="5" id="501" />
+<TGConnectingPoint num="6" id="502" />
+<TGConnectingPoint num="7" id="503" />
+<TGConnectingPoint num="8" id="504" />
+<TGConnectingPoint num="9" id="505" />
+<TGConnectingPoint num="10" id="506" />
+<TGConnectingPoint num="11" id="507" />
+<TGConnectingPoint num="12" id="508" />
+<TGConnectingPoint num="13" id="509" />
+<TGConnectingPoint num="14" id="510" />
+<TGConnectingPoint num="15" id="511" />
+<TGConnectingPoint num="16" id="512" />
+<TGConnectingPoint num="17" id="513" />
+<TGConnectingPoint num="18" id="514" />
+<TGConnectingPoint num="19" id="515" />
+<TGConnectingPoint num="20" id="516" />
+<TGConnectingPoint num="21" id="517" />
+<TGConnectingPoint num="22" id="518" />
+<TGConnectingPoint num="23" id="519" />
+<extraparam>
+<CryptoBlock value="false" />
+</extraparam>
+</COMPONENT>
+<SUBCOMPONENT type="5000" id="549" >
+<father id="495" num="0" />
+<cdparam x="871" y="150" />
+<sizeparam width="218" height="200" minWidth="5" minHeight="2" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="0" maxX="876" minY="0" maxY="285" />
+<infoparam name="Block0" value="DC_Motor" />
+<TGConnectingPoint num="0" id="550" />
+<TGConnectingPoint num="1" id="551" />
+<TGConnectingPoint num="2" id="552" />
+<TGConnectingPoint num="3" id="553" />
+<TGConnectingPoint num="4" id="554" />
+<TGConnectingPoint num="5" id="555" />
+<TGConnectingPoint num="6" id="556" />
+<TGConnectingPoint num="7" id="557" />
+<TGConnectingPoint num="8" id="558" />
+<TGConnectingPoint num="9" id="559" />
+<TGConnectingPoint num="10" id="560" />
+<TGConnectingPoint num="11" id="561" />
+<TGConnectingPoint num="12" id="562" />
+<TGConnectingPoint num="13" id="563" />
+<TGConnectingPoint num="14" id="564" />
+<TGConnectingPoint num="15" id="565" />
+<TGConnectingPoint num="16" id="566" />
+<TGConnectingPoint num="17" id="567" />
+<TGConnectingPoint num="18" id="568" />
+<TGConnectingPoint num="19" id="569" />
+<TGConnectingPoint num="20" id="570" />
+<TGConnectingPoint num="21" id="571" />
+<TGConnectingPoint num="22" id="572" />
+<TGConnectingPoint num="23" id="573" />
+<extraparam>
+<CryptoBlock value="false" />
+<Attribute access="0" id="speed" value="0" type="8" typeOther="" />
+<Signal value="in DC_motor_set(int speed)" attached="true" />
+</extraparam>
+</SUBCOMPONENT>
+<SUBCOMPONENT type="5000" id="522" >
+<father id="495" num="1" />
+<cdparam x="38" y="131" />
+<sizeparam width="250" height="200" minWidth="5" minHeight="2" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="0" maxX="844" minY="0" maxY="285" />
+<infoparam name="Block0" value="US_Sensor" />
+<TGConnectingPoint num="0" id="523" />
+<TGConnectingPoint num="1" id="524" />
+<TGConnectingPoint num="2" id="525" />
+<TGConnectingPoint num="3" id="526" />
+<TGConnectingPoint num="4" id="527" />
+<TGConnectingPoint num="5" id="528" />
+<TGConnectingPoint num="6" id="529" />
+<TGConnectingPoint num="7" id="530" />
+<TGConnectingPoint num="8" id="531" />
+<TGConnectingPoint num="9" id="532" />
+<TGConnectingPoint num="10" id="533" />
+<TGConnectingPoint num="11" id="534" />
+<TGConnectingPoint num="12" id="535" />
+<TGConnectingPoint num="13" id="536" />
+<TGConnectingPoint num="14" id="537" />
+<TGConnectingPoint num="15" id="538" />
+<TGConnectingPoint num="16" id="539" />
+<TGConnectingPoint num="17" id="540" />
+<TGConnectingPoint num="18" id="541" />
+<TGConnectingPoint num="19" id="542" />
+<TGConnectingPoint num="20" id="543" />
+<TGConnectingPoint num="21" id="544" />
+<TGConnectingPoint num="22" id="545" />
+<TGConnectingPoint num="23" id="546" />
+<extraparam>
+<CryptoBlock value="false" />
+<Attribute access="0" id="signal" value="0" type="8" typeOther="" />
+<Attribute access="0" id="distance" value="0" type="8" typeOther="" />
+<Signal value="out US_set_speed(int distance)" attached="true" />
+</extraparam>
+</SUBCOMPONENT>
+
+
+</AVATARBlockDiagramPanel>
+
+<AVATARStateMachineDiagramPanel name="CA" minX="10" maxX="2500" minY="10" maxY="1500" >
+<CONNECTOR type="5102" id="1933" >
+<cdparam x="510" y="549" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<infoparam name="connector" value="null" />
+<TGConnectingPoint num="0" id="1934" />
+<P1  x="510" y="549" id="1857" />
+<P2  x="510" y="578" id="160" />
+<AutomaticDrawing  data="true" />
+</CONNECTOR><SUBCOMPONENT type="-1" id="1935" >
+<father id="1933" num="0" />
+<cdparam x="510" y="563" />
+<sizeparam width="10" height="15" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="List of all parameters of an Avatar SMD transition" value="" />
+<TGConnectingPoint num="0" id="1936" />
+<TGConnectingPoint num="1" id="1937" />
+<TGConnectingPoint num="2" id="1938" />
+<TGConnectingPoint num="3" id="1939" />
+<extraparam>
+<guard value="[ ]" />
+<afterMin value="" />
+<afterMax value="" />
+<computeMin value="" />
+<computeMax value="" />
+</extraparam>
+</SUBCOMPONENT>
+
+<CONNECTOR type="5102" id="1926" >
+<cdparam x="520" y="452" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<infoparam name="connector" value="null" />
+<TGConnectingPoint num="0" id="1927" />
+<P1  x="520" y="452" id="78" />
+<P2  x="512" y="475" id="1831" />
+<AutomaticDrawing  data="true" />
+</CONNECTOR><SUBCOMPONENT type="-1" id="1928" >
+<father id="1926" num="0" />
+<cdparam x="516" y="463" />
+<sizeparam width="10" height="15" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="List of all parameters of an Avatar SMD transition" value="" />
+<TGConnectingPoint num="0" id="1929" />
+<TGConnectingPoint num="1" id="1930" />
+<TGConnectingPoint num="2" id="1931" />
+<TGConnectingPoint num="3" id="1932" />
+<extraparam>
+<guard value="[ ]" />
+<afterMin value="" />
+<afterMax value="" />
+<computeMin value="" />
+<computeMax value="" />
+</extraparam>
+</SUBCOMPONENT>
+
+<CONNECTOR type="5102" id="1848" >
+<cdparam x="528" y="505" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<infoparam name="connector" value="null" />
+<TGConnectingPoint num="0" id="1849" />
+<P1  x="512" y="505" id="1832" />
+<P2  x="510" y="519" id="1856" />
+<AutomaticDrawing  data="true" />
+</CONNECTOR><SUBCOMPONENT type="-1" id="1850" >
+<father id="1848" num="0" />
+<cdparam x="517" y="520" />
+<sizeparam width="10" height="15" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="List of all parameters of an Avatar SMD transition" value="" />
+<TGConnectingPoint num="0" id="1851" />
+<TGConnectingPoint num="1" id="1852" />
+<TGConnectingPoint num="2" id="1853" />
+<TGConnectingPoint num="3" id="1854" />
+<extraparam>
+<guard value="[ ]" />
+<afterMin value="" />
+<afterMax value="" />
+<computeMin value="" />
+<computeMax value="" />
+</extraparam>
+</SUBCOMPONENT>
+
+<COMPONENT type="5104" id="915" >
+<cdparam x="398" y="258" />
+<sizeparam width="143" height="20" minWidth="30" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="Receive signal" value="US_set_speed(speed)" />
+<TGConnectingPoint num="0" id="916" />
+<TGConnectingPoint num="1" id="917" />
+<TGConnectingPoint num="2" id="918" />
+<TGConnectingPoint num="3" id="919" />
+<TGConnectingPoint num="4" id="920" />
+<TGConnectingPoint num="5" id="921" />
+<TGConnectingPoint num="6" id="922" />
+<TGConnectingPoint num="7" id="923" />
+<TGConnectingPoint num="8" id="924" />
+<TGConnectingPoint num="9" id="925" />
+</COMPONENT>
+
+<COMPONENT type="5103" id="890" >
+<cdparam x="404" y="213" />
+<sizeparam width="134" height="20" minWidth="30" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="Send signal" value="DC_motor_set(speed)" />
+<TGConnectingPoint num="0" id="891" />
+<TGConnectingPoint num="1" id="892" />
+<TGConnectingPoint num="2" id="893" />
+<TGConnectingPoint num="3" id="894" />
+<TGConnectingPoint num="4" id="895" />
+<TGConnectingPoint num="5" id="896" />
+<TGConnectingPoint num="6" id="897" />
+<TGConnectingPoint num="7" id="898" />
+<TGConnectingPoint num="8" id="899" />
+<TGConnectingPoint num="9" id="900" />
+</COMPONENT>
+
+<CONNECTOR type="5102" id="193" >
+<cdparam x="492" y="508" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<infoparam name="connector" value="null" />
+<TGConnectingPoint num="0" id="196" />
+<TGConnectingPoint num="1" id="197" />
+<TGConnectingPoint num="2" id="198" />
+<P1  x="485" y="603" id="161" />
+<P2  x="401" y="150" id="107" />
+<Point x="232" y="586" />
+<Point x="245" y="154" />
+<AutomaticDrawing  data="true" />
+</CONNECTOR><SUBCOMPONENT type="-1" id="194" >
+<father id="193" num="0" />
+<cdparam x="232" y="586" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="point " value="null" />
+</SUBCOMPONENT>
+<SUBCOMPONENT type="-1" id="195" >
+<father id="193" num="1" />
+<cdparam x="245" y="154" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="point " value="null" />
+</SUBCOMPONENT>
+<SUBCOMPONENT type="-1" id="199" >
+<father id="193" num="2" />
+<cdparam x="207" y="295" />
+<sizeparam width="138" height="32" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="List of all parameters of an Avatar SMD transition" value="" />
+<TGConnectingPoint num="0" id="200" />
+<TGConnectingPoint num="1" id="201" />
+<TGConnectingPoint num="2" id="202" />
+<TGConnectingPoint num="3" id="203" />
+<extraparam>
+<guard value="[ distance &lt;= threeshold ]" />
+<afterMin value="" />
+<afterMax value="" />
+<computeMin value="" />
+<computeMax value="" />
+<actions value="speed =0" />
+<filesToIncludeLine value="" />
+<codeToIncludeLine value="" />
+</extraparam>
+</SUBCOMPONENT>
+
+<CONNECTOR type="5102" id="182" >
+<cdparam x="542" y="508" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<infoparam name="connector" value="null" />
+<TGConnectingPoint num="0" id="185" />
+<TGConnectingPoint num="1" id="186" />
+<TGConnectingPoint num="2" id="187" />
+<P1  x="535" y="603" id="162" />
+<P2  x="556" y="409" id="67" />
+<Point x="676" y="581" />
+<Point x="667" y="415" />
+<AutomaticDrawing  data="true" />
+</CONNECTOR><SUBCOMPONENT type="-1" id="183" >
+<father id="182" num="0" />
+<cdparam x="676" y="581" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="point " value="null" />
+</SUBCOMPONENT>
+<SUBCOMPONENT type="-1" id="184" >
+<father id="182" num="1" />
+<cdparam x="667" y="415" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="point " value="null" />
+</SUBCOMPONENT>
+<SUBCOMPONENT type="-1" id="188" >
+<father id="182" num="2" />
+<cdparam x="549" y="458" />
+<sizeparam width="131" height="32" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="List of all parameters of an Avatar SMD transition" value="" />
+<TGConnectingPoint num="0" id="189" />
+<TGConnectingPoint num="1" id="190" />
+<TGConnectingPoint num="2" id="191" />
+<TGConnectingPoint num="3" id="192" />
+<extraparam>
+<guard value="[ distance &gt; threeshold ]" />
+<afterMin value="" />
+<afterMax value="" />
+<computeMin value="" />
+<computeMax value="" />
+<actions value="speed =30" />
+<filesToIncludeLine value="" />
+<codeToIncludeLine value="" />
+</extraparam>
+</SUBCOMPONENT>
+
+<COMPONENT type="5107" id="159" >
+<cdparam x="495" y="588" />
+<sizeparam width="30" height="30" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="choice" value="null" />
+<TGConnectingPoint num="0" id="160" />
+<TGConnectingPoint num="1" id="161" />
+<TGConnectingPoint num="2" id="162" />
+<TGConnectingPoint num="3" id="163" />
+<TGConnectingPoint num="4" id="164" />
+<TGConnectingPoint num="5" id="165" />
+<TGConnectingPoint num="6" id="166" />
+<TGConnectingPoint num="7" id="167" />
+<TGConnectingPoint num="8" id="168" />
+<TGConnectingPoint num="9" id="169" />
+<TGConnectingPoint num="10" id="170" />
+<TGConnectingPoint num="11" id="171" />
+<TGConnectingPoint num="12" id="172" />
+<TGConnectingPoint num="13" id="173" />
+<TGConnectingPoint num="14" id="174" />
+</COMPONENT>
+
+<CONNECTOR type="5102" id="148" >
+<cdparam x="530" y="285" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<infoparam name="connector" value="null" />
+<TGConnectingPoint num="0" id="151" />
+<TGConnectingPoint num="1" id="152" />
+<TGConnectingPoint num="2" id="153" />
+<P1  x="489" y="332" id="49" />
+<P2  x="542" y="150" id="108" />
+<Point x="628" y="337" />
+<Point x="634" y="147" />
+<AutomaticDrawing  data="true" />
+</CONNECTOR><SUBCOMPONENT type="-1" id="149" >
+<father id="148" num="0" />
+<cdparam x="628" y="337" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="point " value="null" />
+</SUBCOMPONENT>
+<SUBCOMPONENT type="-1" id="150" >
+<father id="148" num="1" />
+<cdparam x="634" y="147" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="point " value="null" />
+</SUBCOMPONENT>
+<SUBCOMPONENT type="-1" id="154" >
+<father id="148" num="2" />
+<cdparam x="589" y="212" />
+<sizeparam width="138" height="32" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="List of all parameters of an Avatar SMD transition" value="" />
+<TGConnectingPoint num="0" id="155" />
+<TGConnectingPoint num="1" id="156" />
+<TGConnectingPoint num="2" id="157" />
+<TGConnectingPoint num="3" id="158" />
+<extraparam>
+<guard value="[ distance &lt;= threeshold ]" />
+<afterMin value="" />
+<afterMax value="" />
+<computeMin value="" />
+<computeMax value="" />
+<actions value="speed = 0" />
+</extraparam>
+</SUBCOMPONENT>
+
+<CONNECTOR type="5102" id="32" >
+<cdparam x="407" y="70" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<infoparam name="connector" value="null" />
+<TGConnectingPoint num="0" id="31" />
+<P1  x="407" y="70" id="145" />
+<P2  x="417" y="110" id="120" />
+<AutomaticDrawing  data="true" />
+</CONNECTOR><SUBCOMPONENT type="-1" id="30" >
+<father id="32" num="0" />
+<cdparam x="410" y="90" />
+<sizeparam width="10" height="15" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="List of all parameters of an Avatar SMD transition" value="" />
+<TGConnectingPoint num="0" id="26" />
+<TGConnectingPoint num="1" id="27" />
+<TGConnectingPoint num="2" id="28" />
+<TGConnectingPoint num="3" id="29" />
+<extraparam>
+<guard value="[ ]" />
+<afterMin value="" />
+<afterMax value="" />
+<computeMin value="" />
+<computeMax value="" />
+</extraparam>
+</SUBCOMPONENT>
+
+<CONNECTOR type="5102" id="46" >
+<cdparam x="501" y="338" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<infoparam name="connector" value="null" />
+<TGConnectingPoint num="0" id="45" />
+<P1  x="464" y="357" id="53" />
+<P2  x="466" y="367" id="80" />
+<AutomaticDrawing  data="true" />
+</CONNECTOR><SUBCOMPONENT type="-1" id="44" >
+<father id="46" num="0" />
+<cdparam x="520" y="331" />
+<sizeparam width="131" height="32" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="List of all parameters of an Avatar SMD transition" value="" />
+<TGConnectingPoint num="0" id="40" />
+<TGConnectingPoint num="1" id="41" />
+<TGConnectingPoint num="2" id="42" />
+<TGConnectingPoint num="3" id="43" />
+<extraparam>
+<guard value="[ distance &gt; threeshold ]" />
+<afterMin value="" />
+<afterMax value="" />
+<computeMin value="" />
+<computeMax value="" />
+<actions value="speed = 30" />
+<filesToIncludeLine value="" />
+<codeToIncludeLine value="" />
+</extraparam>
+</SUBCOMPONENT>
+
+<COMPONENT type="5107" id="62" >
+<cdparam x="449" y="317" />
+<sizeparam width="30" height="30" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="choice" value="null" />
+<TGConnectingPoint num="0" id="47" />
+<TGConnectingPoint num="1" id="48" />
+<TGConnectingPoint num="2" id="49" />
+<TGConnectingPoint num="3" id="50" />
+<TGConnectingPoint num="4" id="51" />
+<TGConnectingPoint num="5" id="52" />
+<TGConnectingPoint num="6" id="53" />
+<TGConnectingPoint num="7" id="54" />
+<TGConnectingPoint num="8" id="55" />
+<TGConnectingPoint num="9" id="56" />
+<TGConnectingPoint num="10" id="57" />
+<TGConnectingPoint num="11" id="58" />
+<TGConnectingPoint num="12" id="59" />
+<TGConnectingPoint num="13" id="60" />
+<TGConnectingPoint num="14" id="61" />
+</COMPONENT>
+
+<COMPONENT type="5106" id="103" >
+<cdparam x="414" y="367" />
+<sizeparam width="142" height="85" minWidth="40" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="State" value="driving" />
+<TGConnectingPoint num="0" id="63" />
+<TGConnectingPoint num="1" id="64" />
+<TGConnectingPoint num="2" id="65" />
+<TGConnectingPoint num="3" id="66" />
+<TGConnectingPoint num="4" id="67" />
+<TGConnectingPoint num="5" id="68" />
+<TGConnectingPoint num="6" id="69" />
+<TGConnectingPoint num="7" id="70" />
+<TGConnectingPoint num="8" id="71" />
+<TGConnectingPoint num="9" id="72" />
+<TGConnectingPoint num="10" id="73" />
+<TGConnectingPoint num="11" id="74" />
+<TGConnectingPoint num="12" id="75" />
+<TGConnectingPoint num="13" id="76" />
+<TGConnectingPoint num="14" id="77" />
+<TGConnectingPoint num="15" id="78" />
+<TGConnectingPoint num="16" id="79" />
+<TGConnectingPoint num="17" id="80" />
+<TGConnectingPoint num="18" id="81" />
+<TGConnectingPoint num="19" id="82" />
+<TGConnectingPoint num="20" id="83" />
+<TGConnectingPoint num="21" id="84" />
+<TGConnectingPoint num="22" id="85" />
+<TGConnectingPoint num="23" id="86" />
+<TGConnectingPoint num="24" id="87" />
+<TGConnectingPoint num="25" id="88" />
+<TGConnectingPoint num="26" id="89" />
+<TGConnectingPoint num="27" id="90" />
+<TGConnectingPoint num="28" id="91" />
+<TGConnectingPoint num="29" id="92" />
+<TGConnectingPoint num="30" id="93" />
+<TGConnectingPoint num="31" id="94" />
+<TGConnectingPoint num="32" id="95" />
+<TGConnectingPoint num="33" id="96" />
+<TGConnectingPoint num="34" id="97" />
+<TGConnectingPoint num="35" id="98" />
+<TGConnectingPoint num="36" id="99" />
+<TGConnectingPoint num="37" id="100" />
+<TGConnectingPoint num="38" id="101" />
+<TGConnectingPoint num="39" id="102" />
+<extraparam>
+</extraparam>
+</COMPONENT>
+
+<COMPONENT type="5106" id="144" >
+<cdparam x="401" y="110" />
+<sizeparam width="141" height="81" minWidth="40" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="State" value="waiting" />
+<TGConnectingPoint num="0" id="104" />
+<TGConnectingPoint num="1" id="105" />
+<TGConnectingPoint num="2" id="106" />
+<TGConnectingPoint num="3" id="107" />
+<TGConnectingPoint num="4" id="108" />
+<TGConnectingPoint num="5" id="109" />
+<TGConnectingPoint num="6" id="110" />
+<TGConnectingPoint num="7" id="111" />
+<TGConnectingPoint num="8" id="112" />
+<TGConnectingPoint num="9" id="113" />
+<TGConnectingPoint num="10" id="114" />
+<TGConnectingPoint num="11" id="115" />
+<TGConnectingPoint num="12" id="116" />
+<TGConnectingPoint num="13" id="117" />
+<TGConnectingPoint num="14" id="118" />
+<TGConnectingPoint num="15" id="119" />
+<TGConnectingPoint num="16" id="120" />
+<TGConnectingPoint num="17" id="121" />
+<TGConnectingPoint num="18" id="122" />
+<TGConnectingPoint num="19" id="123" />
+<TGConnectingPoint num="20" id="124" />
+<TGConnectingPoint num="21" id="125" />
+<TGConnectingPoint num="22" id="126" />
+<TGConnectingPoint num="23" id="127" />
+<TGConnectingPoint num="24" id="128" />
+<TGConnectingPoint num="25" id="129" />
+<TGConnectingPoint num="26" id="130" />
+<TGConnectingPoint num="27" id="131" />
+<TGConnectingPoint num="28" id="132" />
+<TGConnectingPoint num="29" id="133" />
+<TGConnectingPoint num="30" id="134" />
+<TGConnectingPoint num="31" id="135" />
+<TGConnectingPoint num="32" id="136" />
+<TGConnectingPoint num="33" id="137" />
+<TGConnectingPoint num="34" id="138" />
+<TGConnectingPoint num="35" id="139" />
+<TGConnectingPoint num="36" id="140" />
+<TGConnectingPoint num="37" id="141" />
+<TGConnectingPoint num="38" id="142" />
+<TGConnectingPoint num="39" id="143" />
+<extraparam>
+</extraparam>
+</COMPONENT>
+
+<COMPONENT type="5100" id="146" >
+<cdparam x="400" y="50" />
+<sizeparam width="15" height="15" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="start state" value="null" />
+<TGConnectingPoint num="0" id="145" />
+</COMPONENT>
+
+<CONNECTOR type="5102" id="901" >
+<cdparam x="488" y="191" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<infoparam name="connector" value="null" />
+<TGConnectingPoint num="0" id="902" />
+<P1  x="488" y="191" id="134" />
+<P2  x="471" y="208" id="891" />
+<AutomaticDrawing  data="true" />
+</CONNECTOR><SUBCOMPONENT type="-1" id="903" >
+<father id="901" num="0" />
+<cdparam x="487" y="200" />
+<sizeparam width="10" height="15" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="List of all parameters of an Avatar SMD transition" value="" />
+<TGConnectingPoint num="0" id="904" />
+<TGConnectingPoint num="1" id="905" />
+<TGConnectingPoint num="2" id="906" />
+<TGConnectingPoint num="3" id="907" />
+<extraparam>
+<guard value="[ ]" />
+<afterMin value="" />
+<afterMax value="" />
+<computeMin value="" />
+<computeMax value="" />
+</extraparam>
+</SUBCOMPONENT>
+
+<CONNECTOR type="5102" id="908" >
+<cdparam x="487" y="239" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<infoparam name="connector" value="null" />
+<TGConnectingPoint num="0" id="909" />
+<P1  x="471" y="238" id="892" />
+<P2  x="469" y="253" id="916" />
+<AutomaticDrawing  data="true" />
+</CONNECTOR><SUBCOMPONENT type="-1" id="910" >
+<father id="908" num="0" />
+<cdparam x="476" y="254" />
+<sizeparam width="10" height="15" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="List of all parameters of an Avatar SMD transition" value="" />
+<TGConnectingPoint num="0" id="911" />
+<TGConnectingPoint num="1" id="912" />
+<TGConnectingPoint num="2" id="913" />
+<TGConnectingPoint num="3" id="914" />
+<extraparam>
+<guard value="[ ]" />
+<afterMin value="" />
+<afterMax value="" />
+<computeMin value="" />
+<computeMax value="" />
+</extraparam>
+</SUBCOMPONENT>
+
+<CONNECTOR type="5102" id="933" >
+<cdparam x="484" y="279" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<infoparam name="connector" value="null" />
+<TGConnectingPoint num="0" id="934" />
+<P1  x="469" y="283" id="917" />
+<P2  x="464" y="307" id="47" />
+<AutomaticDrawing  data="true" />
+</CONNECTOR><SUBCOMPONENT type="-1" id="935" >
+<father id="933" num="0" />
+<cdparam x="484" y="323" />
+<sizeparam width="10" height="15" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="List of all parameters of an Avatar SMD transition" value="" />
+<TGConnectingPoint num="0" id="936" />
+<TGConnectingPoint num="1" id="937" />
+<TGConnectingPoint num="2" id="938" />
+<TGConnectingPoint num="3" id="939" />
+<extraparam>
+<guard value="[ ]" />
+<afterMin value="" />
+<afterMax value="" />
+<computeMin value="" />
+<computeMax value="" />
+</extraparam>
+</SUBCOMPONENT>
+
+<COMPONENT type="5104" id="1855" >
+<cdparam x="439" y="524" />
+<sizeparam width="143" height="20" minWidth="30" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="Receive signal" value="US_set_speed(speed)" />
+<TGConnectingPoint num="0" id="1856" />
+<TGConnectingPoint num="1" id="1857" />
+<TGConnectingPoint num="2" id="1858" />
+<TGConnectingPoint num="3" id="1859" />
+<TGConnectingPoint num="4" id="1860" />
+<TGConnectingPoint num="5" id="1861" />
+<TGConnectingPoint num="6" id="1862" />
+<TGConnectingPoint num="7" id="1863" />
+<TGConnectingPoint num="8" id="1864" />
+<TGConnectingPoint num="9" id="1865" />
+</COMPONENT>
+
+<COMPONENT type="5103" id="1830" >
+<cdparam x="445" y="480" />
+<sizeparam width="134" height="20" minWidth="30" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="Send signal" value="DC_motor_set(speed)" />
+<TGConnectingPoint num="0" id="1831" />
+<TGConnectingPoint num="1" id="1832" />
+<TGConnectingPoint num="2" id="1833" />
+<TGConnectingPoint num="3" id="1834" />
+<TGConnectingPoint num="4" id="1835" />
+<TGConnectingPoint num="5" id="1836" />
+<TGConnectingPoint num="6" id="1837" />
+<TGConnectingPoint num="7" id="1838" />
+<TGConnectingPoint num="8" id="1839" />
+<TGConnectingPoint num="9" id="1840" />
+</COMPONENT>
+
+
+</AVATARStateMachineDiagramPanel>
+
+<AVATARStateMachineDiagramPanel name="Collision_Avoidance" minX="10" maxX="2500" minY="10" maxY="1500" >
+<COMPONENT type="5100" id="520" >
+<cdparam x="400" y="50" />
+<sizeparam width="15" height="15" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="start state" value="null" />
+<TGConnectingPoint num="0" id="521" />
+</COMPONENT>
+
+
+</AVATARStateMachineDiagramPanel>
+
+<AVATARStateMachineDiagramPanel name="US_Sensor" minX="10" maxX="2500" minY="10" maxY="1500" >
+<COMPONENT type="5108" id="1940" >
+<cdparam x="455" y="337" />
+<sizeparam width="169" height="20" minWidth="30" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="TGComponent" value="null" />
+<TGConnectingPoint num="0" id="1941" />
+<TGConnectingPoint num="1" id="1942" />
+<extraparam>
+<Data variable="distance" minValue="45" maxValue="55" functionId="0" />
+</extraparam>
+</COMPONENT>
+
+<CONNECTOR type="5102" id="704" >
+<cdparam x="527" y="439" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<infoparam name="connector" value="null" />
+<TGConnectingPoint num="0" id="708" />
+<TGConnectingPoint num="1" id="709" />
+<TGConnectingPoint num="2" id="710" />
+<TGConnectingPoint num="3" id="711" />
+<P1  x="527" y="439" id="688" />
+<P2  x="543" y="262" id="633" />
+<Point x="529" y="473" />
+<Point x="692" y="473" />
+<Point x="685" y="266" />
+<AutomaticDrawing  data="true" />
+</CONNECTOR><SUBCOMPONENT type="-1" id="705" >
+<father id="704" num="0" />
+<cdparam x="529" y="473" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="point " value="null" />
+</SUBCOMPONENT>
+<SUBCOMPONENT type="-1" id="706" >
+<father id="704" num="1" />
+<cdparam x="692" y="473" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="point " value="null" />
+</SUBCOMPONENT>
+<SUBCOMPONENT type="-1" id="707" >
+<father id="704" num="2" />
+<cdparam x="685" y="266" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="point " value="null" />
+</SUBCOMPONENT>
+<SUBCOMPONENT type="-1" id="712" >
+<father id="704" num="3" />
+<cdparam x="535" y="350" />
+<sizeparam width="10" height="15" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="List of all parameters of an Avatar SMD transition" value="" />
+<TGConnectingPoint num="0" id="713" />
+<TGConnectingPoint num="1" id="714" />
+<TGConnectingPoint num="2" id="715" />
+<TGConnectingPoint num="3" id="716" />
+<extraparam>
+<guard value="[ ]" />
+<afterMin value="" />
+<afterMax value="" />
+<computeMin value="" />
+<computeMax value="" />
+</extraparam>
+</SUBCOMPONENT>
+
+<COMPONENT type="5103" id="686" >
+<cdparam x="453" y="414" />
+<sizeparam width="148" height="20" minWidth="30" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="Send signal" value="US_set_speed(distance)" />
+<TGConnectingPoint num="0" id="687" />
+<TGConnectingPoint num="1" id="688" />
+<TGConnectingPoint num="2" id="689" />
+<TGConnectingPoint num="3" id="690" />
+<TGConnectingPoint num="4" id="691" />
+<TGConnectingPoint num="5" id="692" />
+<TGConnectingPoint num="6" id="693" />
+<TGConnectingPoint num="7" id="694" />
+<TGConnectingPoint num="8" id="695" />
+<TGConnectingPoint num="9" id="696" />
+</COMPONENT>
+
+<COMPONENT type="5106" id="628" >
+<cdparam x="443" y="237" />
+<sizeparam width="100" height="50" minWidth="40" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="State" value="busy" />
+<TGConnectingPoint num="0" id="629" />
+<TGConnectingPoint num="1" id="630" />
+<TGConnectingPoint num="2" id="631" />
+<TGConnectingPoint num="3" id="632" />
+<TGConnectingPoint num="4" id="633" />
+<TGConnectingPoint num="5" id="634" />
+<TGConnectingPoint num="6" id="635" />
+<TGConnectingPoint num="7" id="636" />
+<TGConnectingPoint num="8" id="637" />
+<TGConnectingPoint num="9" id="638" />
+<TGConnectingPoint num="10" id="639" />
+<TGConnectingPoint num="11" id="640" />
+<TGConnectingPoint num="12" id="641" />
+<TGConnectingPoint num="13" id="642" />
+<TGConnectingPoint num="14" id="643" />
+<TGConnectingPoint num="15" id="644" />
+<TGConnectingPoint num="16" id="645" />
+<TGConnectingPoint num="17" id="646" />
+<TGConnectingPoint num="18" id="647" />
+<TGConnectingPoint num="19" id="648" />
+<TGConnectingPoint num="20" id="649" />
+<TGConnectingPoint num="21" id="650" />
+<TGConnectingPoint num="22" id="651" />
+<TGConnectingPoint num="23" id="652" />
+<TGConnectingPoint num="24" id="653" />
+<TGConnectingPoint num="25" id="654" />
+<TGConnectingPoint num="26" id="655" />
+<TGConnectingPoint num="27" id="656" />
+<TGConnectingPoint num="28" id="657" />
+<TGConnectingPoint num="29" id="658" />
+<TGConnectingPoint num="30" id="659" />
+<TGConnectingPoint num="31" id="660" />
+<TGConnectingPoint num="32" id="661" />
+<TGConnectingPoint num="33" id="662" />
+<TGConnectingPoint num="34" id="663" />
+<TGConnectingPoint num="35" id="664" />
+<TGConnectingPoint num="36" id="665" />
+<TGConnectingPoint num="37" id="666" />
+<TGConnectingPoint num="38" id="667" />
+<TGConnectingPoint num="39" id="668" />
+<extraparam>
+</extraparam>
+</COMPONENT>
+
+<COMPONENT type="5106" id="580" >
+<cdparam x="409" y="118" />
+<sizeparam width="100" height="50" minWidth="40" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="State" value="US_init" />
+<TGConnectingPoint num="0" id="581" />
+<TGConnectingPoint num="1" id="582" />
+<TGConnectingPoint num="2" id="583" />
+<TGConnectingPoint num="3" id="584" />
+<TGConnectingPoint num="4" id="585" />
+<TGConnectingPoint num="5" id="586" />
+<TGConnectingPoint num="6" id="587" />
+<TGConnectingPoint num="7" id="588" />
+<TGConnectingPoint num="8" id="589" />
+<TGConnectingPoint num="9" id="590" />
+<TGConnectingPoint num="10" id="591" />
+<TGConnectingPoint num="11" id="592" />
+<TGConnectingPoint num="12" id="593" />
+<TGConnectingPoint num="13" id="594" />
+<TGConnectingPoint num="14" id="595" />
+<TGConnectingPoint num="15" id="596" />
+<TGConnectingPoint num="16" id="597" />
+<TGConnectingPoint num="17" id="598" />
+<TGConnectingPoint num="18" id="599" />
+<TGConnectingPoint num="19" id="600" />
+<TGConnectingPoint num="20" id="601" />
+<TGConnectingPoint num="21" id="602" />
+<TGConnectingPoint num="22" id="603" />
+<TGConnectingPoint num="23" id="604" />
+<TGConnectingPoint num="24" id="605" />
+<TGConnectingPoint num="25" id="606" />
+<TGConnectingPoint num="26" id="607" />
+<TGConnectingPoint num="27" id="608" />
+<TGConnectingPoint num="28" id="609" />
+<TGConnectingPoint num="29" id="610" />
+<TGConnectingPoint num="30" id="611" />
+<TGConnectingPoint num="31" id="612" />
+<TGConnectingPoint num="32" id="613" />
+<TGConnectingPoint num="33" id="614" />
+<TGConnectingPoint num="34" id="615" />
+<TGConnectingPoint num="35" id="616" />
+<TGConnectingPoint num="36" id="617" />
+<TGConnectingPoint num="37" id="618" />
+<TGConnectingPoint num="38" id="619" />
+<TGConnectingPoint num="39" id="620" />
+<extraparam>
+</extraparam>
+</COMPONENT>
+
+<COMPONENT type="5100" id="547" >
+<cdparam x="400" y="50" />
+<sizeparam width="15" height="15" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="start state" value="null" />
+<TGConnectingPoint num="0" id="548" />
+</COMPONENT>
+
+<CONNECTOR type="5102" id="621" >
+<cdparam x="407" y="70" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<infoparam name="connector" value="null" />
+<TGConnectingPoint num="0" id="622" />
+<P1  x="407" y="70" id="548" />
+<P2  x="409" y="118" id="581" />
+<AutomaticDrawing  data="true" />
+</CONNECTOR><SUBCOMPONENT type="-1" id="623" >
+<father id="621" num="0" />
+<cdparam x="430" y="88" />
+<sizeparam width="10" height="15" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="List of all parameters of an Avatar SMD transition" value="" />
+<TGConnectingPoint num="0" id="624" />
+<TGConnectingPoint num="1" id="625" />
+<TGConnectingPoint num="2" id="626" />
+<TGConnectingPoint num="3" id="627" />
+<extraparam>
+<guard value="[ ]" />
+<afterMin value="" />
+<afterMax value="" />
+<computeMin value="" />
+<computeMax value="" />
+</extraparam>
+</SUBCOMPONENT>
+
+<CONNECTOR type="5102" id="669" >
+<cdparam x="496" y="168" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<infoparam name="connector" value="null" />
+<TGConnectingPoint num="0" id="670" />
+<P1  x="496" y="168" id="612" />
+<P2  x="493" y="237" id="630" />
+<AutomaticDrawing  data="true" />
+</CONNECTOR><SUBCOMPONENT type="-1" id="671" >
+<father id="669" num="0" />
+<cdparam x="494" y="202" />
+<sizeparam width="10" height="15" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="List of all parameters of an Avatar SMD transition" value="" />
+<TGConnectingPoint num="0" id="672" />
+<TGConnectingPoint num="1" id="673" />
+<TGConnectingPoint num="2" id="674" />
+<TGConnectingPoint num="3" id="675" />
+<extraparam>
+<guard value="[ ]" />
+<afterMin value="" />
+<afterMax value="" />
+<computeMin value="" />
+<computeMax value="" />
+</extraparam>
+</SUBCOMPONENT>
+
+<CONNECTOR type="5102" id="1943" >
+<cdparam x="530" y="287" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<infoparam name="connector" value="null" />
+<TGConnectingPoint num="0" id="1944" />
+<P1  x="530" y="287" id="660" />
+<P2  x="539" y="332" id="1941" />
+<AutomaticDrawing  data="true" />
+</CONNECTOR><SUBCOMPONENT type="-1" id="1945" >
+<father id="1943" num="0" />
+<cdparam x="534" y="309" />
+<sizeparam width="10" height="15" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="List of all parameters of an Avatar SMD transition" value="" />
+<TGConnectingPoint num="0" id="1946" />
+<TGConnectingPoint num="1" id="1947" />
+<TGConnectingPoint num="2" id="1948" />
+<TGConnectingPoint num="3" id="1949" />
+<extraparam>
+<guard value="[ ]" />
+<afterMin value="" />
+<afterMax value="" />
+<computeMin value="" />
+<computeMax value="" />
+</extraparam>
+</SUBCOMPONENT>
+
+<CONNECTOR type="5102" id="1950" >
+<cdparam x="539" y="362" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<infoparam name="connector" value="null" />
+<TGConnectingPoint num="0" id="1951" />
+<P1  x="539" y="362" id="1942" />
+<P2  x="527" y="409" id="687" />
+<AutomaticDrawing  data="true" />
+</CONNECTOR><SUBCOMPONENT type="-1" id="1952" >
+<father id="1950" num="0" />
+<cdparam x="533" y="385" />
+<sizeparam width="10" height="15" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="List of all parameters of an Avatar SMD transition" value="" />
+<TGConnectingPoint num="0" id="1953" />
+<TGConnectingPoint num="1" id="1954" />
+<TGConnectingPoint num="2" id="1955" />
+<TGConnectingPoint num="3" id="1956" />
+<extraparam>
+<guard value="[ ]" />
+<afterMin value="" />
+<afterMax value="" />
+<computeMin value="" />
+<computeMax value="" />
+</extraparam>
+</SUBCOMPONENT>
+
+
+</AVATARStateMachineDiagramPanel>
+
+<AVATARStateMachineDiagramPanel name="DC_Motor" minX="10" maxX="2500" minY="10" maxY="1500" >
+<CONNECTOR type="5102" id="879" >
+<cdparam x="628" y="438" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<infoparam name="connector" value="null" />
+<TGConnectingPoint num="0" id="882" />
+<TGConnectingPoint num="1" id="883" />
+<TGConnectingPoint num="2" id="884" />
+<P1  x="628" y="438" id="837" />
+<P2  x="609" y="267" id="770" />
+<Point x="763" y="437" />
+<Point x="758" y="268" />
+<AutomaticDrawing  data="true" />
+</CONNECTOR><SUBCOMPONENT type="-1" id="880" >
+<father id="879" num="0" />
+<cdparam x="763" y="437" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="point " value="null" />
+</SUBCOMPONENT>
+<SUBCOMPONENT type="-1" id="881" >
+<father id="879" num="1" />
+<cdparam x="758" y="268" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="point " value="null" />
+</SUBCOMPONENT>
+<SUBCOMPONENT type="-1" id="885" >
+<father id="879" num="2" />
+<cdparam x="618" y="352" />
+<sizeparam width="10" height="15" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="List of all parameters of an Avatar SMD transition" value="" />
+<TGConnectingPoint num="0" id="886" />
+<TGConnectingPoint num="1" id="887" />
+<TGConnectingPoint num="2" id="888" />
+<TGConnectingPoint num="3" id="889" />
+<extraparam>
+<guard value="[ ]" />
+<afterMin value="" />
+<afterMax value="" />
+<computeMin value="" />
+<computeMax value="" />
+</extraparam>
+</SUBCOMPONENT>
+
+<COMPONENT type="5104" id="854" >
+<cdparam x="539" y="362" />
+<sizeparam width="141" height="20" minWidth="30" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="Receive signal" value="DC_motor_set(speed)" />
+<TGConnectingPoint num="0" id="855" />
+<TGConnectingPoint num="1" id="856" />
+<TGConnectingPoint num="2" id="857" />
+<TGConnectingPoint num="3" id="858" />
+<TGConnectingPoint num="4" id="859" />
+<TGConnectingPoint num="5" id="860" />
+<TGConnectingPoint num="6" id="861" />
+<TGConnectingPoint num="7" id="862" />
+<TGConnectingPoint num="8" id="863" />
+<TGConnectingPoint num="9" id="864" />
+</COMPONENT>
+
+<COMPONENT type="5106" id="813" >
+<cdparam x="528" y="420" />
+<sizeparam width="100" height="50" minWidth="40" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="State" value="busy" />
+<TGConnectingPoint num="0" id="814" />
+<TGConnectingPoint num="1" id="815" />
+<TGConnectingPoint num="2" id="816" />
+<TGConnectingPoint num="3" id="817" />
+<TGConnectingPoint num="4" id="818" />
+<TGConnectingPoint num="5" id="819" />
+<TGConnectingPoint num="6" id="820" />
+<TGConnectingPoint num="7" id="821" />
+<TGConnectingPoint num="8" id="822" />
+<TGConnectingPoint num="9" id="823" />
+<TGConnectingPoint num="10" id="824" />
+<TGConnectingPoint num="11" id="825" />
+<TGConnectingPoint num="12" id="826" />
+<TGConnectingPoint num="13" id="827" />
+<TGConnectingPoint num="14" id="828" />
+<TGConnectingPoint num="15" id="829" />
+<TGConnectingPoint num="16" id="830" />
+<TGConnectingPoint num="17" id="831" />
+<TGConnectingPoint num="18" id="832" />
+<TGConnectingPoint num="19" id="833" />
+<TGConnectingPoint num="20" id="834" />
+<TGConnectingPoint num="21" id="835" />
+<TGConnectingPoint num="22" id="836" />
+<TGConnectingPoint num="23" id="837" />
+<TGConnectingPoint num="24" id="838" />
+<TGConnectingPoint num="25" id="839" />
+<TGConnectingPoint num="26" id="840" />
+<TGConnectingPoint num="27" id="841" />
+<TGConnectingPoint num="28" id="842" />
+<TGConnectingPoint num="29" id="843" />
+<TGConnectingPoint num="30" id="844" />
+<TGConnectingPoint num="31" id="845" />
+<TGConnectingPoint num="32" id="846" />
+<TGConnectingPoint num="33" id="847" />
+<TGConnectingPoint num="34" id="848" />
+<TGConnectingPoint num="35" id="849" />
+<TGConnectingPoint num="36" id="850" />
+<TGConnectingPoint num="37" id="851" />
+<TGConnectingPoint num="38" id="852" />
+<TGConnectingPoint num="39" id="853" />
+<extraparam>
+</extraparam>
+</COMPONENT>
+
+<COMPONENT type="5106" id="765" >
+<cdparam x="509" y="242" />
+<sizeparam width="100" height="50" minWidth="40" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="State" value="idle" />
+<TGConnectingPoint num="0" id="766" />
+<TGConnectingPoint num="1" id="767" />
+<TGConnectingPoint num="2" id="768" />
+<TGConnectingPoint num="3" id="769" />
+<TGConnectingPoint num="4" id="770" />
+<TGConnectingPoint num="5" id="771" />
+<TGConnectingPoint num="6" id="772" />
+<TGConnectingPoint num="7" id="773" />
+<TGConnectingPoint num="8" id="774" />
+<TGConnectingPoint num="9" id="775" />
+<TGConnectingPoint num="10" id="776" />
+<TGConnectingPoint num="11" id="777" />
+<TGConnectingPoint num="12" id="778" />
+<TGConnectingPoint num="13" id="779" />
+<TGConnectingPoint num="14" id="780" />
+<TGConnectingPoint num="15" id="781" />
+<TGConnectingPoint num="16" id="782" />
+<TGConnectingPoint num="17" id="783" />
+<TGConnectingPoint num="18" id="784" />
+<TGConnectingPoint num="19" id="785" />
+<TGConnectingPoint num="20" id="786" />
+<TGConnectingPoint num="21" id="787" />
+<TGConnectingPoint num="22" id="788" />
+<TGConnectingPoint num="23" id="789" />
+<TGConnectingPoint num="24" id="790" />
+<TGConnectingPoint num="25" id="791" />
+<TGConnectingPoint num="26" id="792" />
+<TGConnectingPoint num="27" id="793" />
+<TGConnectingPoint num="28" id="794" />
+<TGConnectingPoint num="29" id="795" />
+<TGConnectingPoint num="30" id="796" />
+<TGConnectingPoint num="31" id="797" />
+<TGConnectingPoint num="32" id="798" />
+<TGConnectingPoint num="33" id="799" />
+<TGConnectingPoint num="34" id="800" />
+<TGConnectingPoint num="35" id="801" />
+<TGConnectingPoint num="36" id="802" />
+<TGConnectingPoint num="37" id="803" />
+<TGConnectingPoint num="38" id="804" />
+<TGConnectingPoint num="39" id="805" />
+<extraparam>
+</extraparam>
+</COMPONENT>
+
+<COMPONENT type="5106" id="717" >
+<cdparam x="409" y="108" />
+<sizeparam width="132" height="50" minWidth="40" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="State" value="DCmotor_init" />
+<TGConnectingPoint num="0" id="718" />
+<TGConnectingPoint num="1" id="719" />
+<TGConnectingPoint num="2" id="720" />
+<TGConnectingPoint num="3" id="721" />
+<TGConnectingPoint num="4" id="722" />
+<TGConnectingPoint num="5" id="723" />
+<TGConnectingPoint num="6" id="724" />
+<TGConnectingPoint num="7" id="725" />
+<TGConnectingPoint num="8" id="726" />
+<TGConnectingPoint num="9" id="727" />
+<TGConnectingPoint num="10" id="728" />
+<TGConnectingPoint num="11" id="729" />
+<TGConnectingPoint num="12" id="730" />
+<TGConnectingPoint num="13" id="731" />
+<TGConnectingPoint num="14" id="732" />
+<TGConnectingPoint num="15" id="733" />
+<TGConnectingPoint num="16" id="734" />
+<TGConnectingPoint num="17" id="735" />
+<TGConnectingPoint num="18" id="736" />
+<TGConnectingPoint num="19" id="737" />
+<TGConnectingPoint num="20" id="738" />
+<TGConnectingPoint num="21" id="739" />
+<TGConnectingPoint num="22" id="740" />
+<TGConnectingPoint num="23" id="741" />
+<TGConnectingPoint num="24" id="742" />
+<TGConnectingPoint num="25" id="743" />
+<TGConnectingPoint num="26" id="744" />
+<TGConnectingPoint num="27" id="745" />
+<TGConnectingPoint num="28" id="746" />
+<TGConnectingPoint num="29" id="747" />
+<TGConnectingPoint num="30" id="748" />
+<TGConnectingPoint num="31" id="749" />
+<TGConnectingPoint num="32" id="750" />
+<TGConnectingPoint num="33" id="751" />
+<TGConnectingPoint num="34" id="752" />
+<TGConnectingPoint num="35" id="753" />
+<TGConnectingPoint num="36" id="754" />
+<TGConnectingPoint num="37" id="755" />
+<TGConnectingPoint num="38" id="756" />
+<TGConnectingPoint num="39" id="757" />
+<extraparam>
+</extraparam>
+</COMPONENT>
+
+<COMPONENT type="5100" id="574" >
+<cdparam x="400" y="50" />
+<sizeparam width="15" height="15" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="start state" value="null" />
+<TGConnectingPoint num="0" id="575" />
+</COMPONENT>
+
+<CONNECTOR type="5102" id="758" >
+<cdparam x="407" y="70" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<infoparam name="connector" value="null" />
+<TGConnectingPoint num="0" id="759" />
+<P1  x="407" y="70" id="575" />
+<P2  x="409" y="108" id="718" />
+<AutomaticDrawing  data="true" />
+</CONNECTOR><SUBCOMPONENT type="-1" id="760" >
+<father id="758" num="0" />
+<cdparam x="408" y="89" />
+<sizeparam width="10" height="15" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="List of all parameters of an Avatar SMD transition" value="" />
+<TGConnectingPoint num="0" id="761" />
+<TGConnectingPoint num="1" id="762" />
+<TGConnectingPoint num="2" id="763" />
+<TGConnectingPoint num="3" id="764" />
+<extraparam>
+<guard value="[ ]" />
+<afterMin value="" />
+<afterMax value="" />
+<computeMin value="" />
+<computeMax value="" />
+</extraparam>
+</SUBCOMPONENT>
+
+<CONNECTOR type="5102" id="806" >
+<cdparam x="541" y="158" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<infoparam name="connector" value="null" />
+<TGConnectingPoint num="0" id="807" />
+<P1  x="541" y="158" id="725" />
+<P2  x="546" y="242" id="783" />
+<AutomaticDrawing  data="true" />
+</CONNECTOR><SUBCOMPONENT type="-1" id="808" >
+<father id="806" num="0" />
+<cdparam x="543" y="200" />
+<sizeparam width="10" height="15" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="List of all parameters of an Avatar SMD transition" value="" />
+<TGConnectingPoint num="0" id="809" />
+<TGConnectingPoint num="1" id="810" />
+<TGConnectingPoint num="2" id="811" />
+<TGConnectingPoint num="3" id="812" />
+<extraparam>
+<guard value="[ ]" />
+<afterMin value="" />
+<afterMax value="" />
+<computeMin value="" />
+<computeMax value="" />
+</extraparam>
+</SUBCOMPONENT>
+
+<CONNECTOR type="5102" id="865" >
+<cdparam x="609" y="292" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<infoparam name="connector" value="null" />
+<TGConnectingPoint num="0" id="866" />
+<P1  x="609" y="292" id="773" />
+<P2  x="609" y="357" id="855" />
+<AutomaticDrawing  data="true" />
+</CONNECTOR><SUBCOMPONENT type="-1" id="867" >
+<father id="865" num="0" />
+<cdparam x="616" y="325" />
+<sizeparam width="10" height="15" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="List of all parameters of an Avatar SMD transition" value="" />
+<TGConnectingPoint num="0" id="868" />
+<TGConnectingPoint num="1" id="869" />
+<TGConnectingPoint num="2" id="870" />
+<TGConnectingPoint num="3" id="871" />
+<extraparam>
+<guard value="[ ]" />
+<afterMin value="" />
+<afterMax value="" />
+<computeMin value="" />
+<computeMax value="" />
+</extraparam>
+</SUBCOMPONENT>
+
+<CONNECTOR type="5102" id="872" >
+<cdparam x="624" y="388" />
+<sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<infoparam name="connector" value="null" />
+<TGConnectingPoint num="0" id="873" />
+<P1  x="609" y="387" id="856" />
+<P2  x="615" y="420" id="833" />
+<AutomaticDrawing  data="true" />
+</CONNECTOR><SUBCOMPONENT type="-1" id="874" >
+<father id="872" num="0" />
+<cdparam x="626" y="404" />
+<sizeparam width="10" height="15" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+<hidden value="false" />
+<cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+<infoparam name="List of all parameters of an Avatar SMD transition" value="" />
+<TGConnectingPoint num="0" id="875" />
+<TGConnectingPoint num="1" id="876" />
+<TGConnectingPoint num="2" id="877" />
+<TGConnectingPoint num="3" id="878" />
+<extraparam>
+<guard value="[ ]" />
+<afterMin value="" />
+<afterMax value="" />
+<computeMin value="" />
+<computeMax value="" />
+</extraparam>
+</SUBCOMPONENT>
+
+
+</AVATARStateMachineDiagramPanel>
+
+</Modeling>
+
+
+
+
+</TURTLEGMODELING>
