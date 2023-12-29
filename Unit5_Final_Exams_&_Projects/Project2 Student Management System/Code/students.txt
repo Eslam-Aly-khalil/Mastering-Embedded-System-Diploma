@@ -1,0 +1,5 @@
+1 eslam khalil 2.06 10 20 30
+2 mahmoud essam 3.18 10 20 40
+2 kareem ahmed 1.80 10 40 30
+4 ibrahem hamdy 2.60 20 30 40
+5 mohammed aly 2.98 10 40 50
